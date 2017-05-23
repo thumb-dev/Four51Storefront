@@ -14,6 +14,12 @@
                             <span class="hidden-xs">{{'Products' | rc | xlat}}</span>
                         </a>
                     </li>
+                    <li class="customLink">
+                        <a ng-show="Four51User.isAuthenticated()" href="http://www.four51.com" target="_blank">
+                            <i class="fa fa-cloud" aria-hidden="true"></i>
+                            <span class="hidden-xs">Four51</span>
+                        </a>
+                    </li>
                     <li class="order" ng-if="user.Type == 'Customer'" ng-class="{'active': isActive('order'), 'active-xs': isActive('favoriteorders')}">
                         <a id="451qa_order_link" href="order">
                             <i class="fa fa-clipboard"></i>
